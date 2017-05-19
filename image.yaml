@@ -1,0 +1,27 @@
+name: "jboss-amq-6/amq62"
+version: "6.2.1"
+from: "jboss/openjdk18-rhel7:1.0"
+user: 185
+envs:
+    information:
+        - name: "JBOSS_PRODUCT"
+          value: "AMQ"
+        - name: "JBOSS_AMQ_VERSION"
+          value: "6.2.1.redhat_159"
+        - name: "PRODUCT_VERSION"
+          value: "6.2.1.redhat_159"
+        - name: "AMQ_HOME"
+          value: "/opt/amq"
+cmd:
+    - "/opt/amq/bin/activemq"
+    - "console"
+scripts:
+    - package: amq-install
+      exec: install.sh
+    - package: amq-chown
+      exec: install.sh
+sources:
+    - url: jboss-a-mq-6.2.1.redhat-159.zip
+      md5: 81b2b70492a9429d9fb9ee3b56bd16d6
+dogen:
+    version: 2.0.0rc15
