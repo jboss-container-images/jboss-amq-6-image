@@ -1,0 +1,28 @@
+name: "jboss-amq-6/amq63"
+version: "6.3.0"
+release: "dev"
+from: "jboss/openjdk18-rhel7:1.0"
+user: 185
+envs:
+    information:
+        - name: "JBOSS_PRODUCT"
+          value: "AMQ"
+        - name: "JBOSS_AMQ_VERSION"
+          value: "6.3.0.redhat-187"
+        - name: "PRODUCT_VERSION"
+          value: "6.3.0.redhat-187"
+        - name: "AMQ_HOME"
+          value: "/opt/amq"
+cmd:
+    - "/opt/amq/bin/activemq"
+    - "console"
+scripts:
+    - package: amq-install
+      exec: install.sh
+    - package: amq-chown
+      exec: install.sh
+sources:
+    - url: http://download.devel.redhat.com/released/JBossAMQ/6.3.0/jboss-a-mq-6.3.0.redhat-187.zip
+      md5: 336820eb3978f23f93a0c8b34a417a62
+dogen:
+    version: 2.0.0rc15
