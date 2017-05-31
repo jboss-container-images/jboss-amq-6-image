@@ -22,7 +22,7 @@ scripts:
     - package: amq-chown
       exec: install.sh
 sources:
-    - url: http://download.devel.redhat.com/released/JBossAMQ/6.3.0/jboss-a-mq-6.3.0.redhat-187.zip
+    - url: jboss-a-mq-6.3.0.redhat-187.zip
       md5: 336820eb3978f23f93a0c8b34a417a62
 dogen:
     version: 2.0.0rc15
