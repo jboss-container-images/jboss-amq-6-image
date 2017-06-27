@@ -25,4 +25,8 @@ sources:
       md5: 81b2b70492a9429d9fb9ee3b56bd16d6
       hint: "https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=46681&product=jboss.amq&version=6.2.1&downloadType=securityPatches"
 dogen:
-    version: 2.0.0
+    version: 2.1.0
+    plugins:
+        dist_git:
+            repo: jboss-amq-6-docker
+            branch: jb-amq62
