@@ -23,6 +23,6 @@ scripts:
 sources:
     - artifact: jboss-a-mq-6.2.1.redhat-186.zip
       md5: c8acb8802ddb5bc170fce4c831f56d1b
-      hint: "https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=50521&product=jboss.amq&version=6.2.1&downloadType=securityPatches"
+      hint: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=50521&product=jboss.amq&version=6.2.1&downloadType=securityPatches"
 dogen:
     version: 2.0.0
