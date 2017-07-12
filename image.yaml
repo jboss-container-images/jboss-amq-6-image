@@ -7,9 +7,9 @@ envs:
     - name: "JBOSS_PRODUCT"
       value: "AMQ"
     - name: "JBOSS_AMQ_VERSION"
-      value: "6.2.1.redhat_186"
+      value: "6.2.1.redhat_159"
     - name: "PRODUCT_VERSION"
-      value: "6.2.1.redhat_186"
+      value: "6.2.1.redhat_159"
     - name: "AMQ_HOME"
       value: "/opt/amq"
 cmd:
@@ -21,9 +21,9 @@ scripts:
     - package: amq-chown
       exec: install.sh
 sources:
-    - artifact: jboss-a-mq-6.2.1.redhat-186.zip
-      md5: c8acb8802ddb5bc170fce4c831f56d1b
-      hint: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=50521&product=jboss.amq&version=6.2.1&downloadType=securityPatches"
+    - artifact: jboss-a-mq-6.2.1.redhat-159.zip
+      md5: 81b2b70492a9429d9fb9ee3b56bd16d6
+      hint: "https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=46681&product=jboss.amq&version=6.2.1&downloadType=securityPatches"
 dogen:
     version: 2.1.0
     plugins:
