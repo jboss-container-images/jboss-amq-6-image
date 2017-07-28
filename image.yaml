@@ -25,7 +25,7 @@ sources:
       md5: c8acb8802ddb5bc170fce4c831f56d1b
       hint: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=50521&product=jboss.amq&version=6.2.1&downloadType=securityPatches"
 dogen:
-    version: 2.1.0
+    version: 2.4.1
     plugins:
         dist_git:
             repo: jboss-amq-6-docker
