@@ -1,3 +1,4 @@
+@jboss-amq-6/amq63
 Feature: Standalone AMQ image tests
 
   @ci
