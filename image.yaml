@@ -1,8 +1,9 @@
+schema_version: 1
+
 name: "jboss-amq-6/amq63"
 description: "Red Hat JBoss AMQ 6.3 container image"
 version: "6.3.0"
 from: "jboss/openjdk18-rhel7:1.0"
-user: 185
 envs:
     - name: "JBOSS_PRODUCT"
       value: "AMQ"
@@ -12,21 +13,20 @@ envs:
       value: "6.3.0.redhat-283"
     - name: "AMQ_HOME"
       value: "/opt/amq"
-cmd:
-    - "/opt/amq/bin/activemq"
-    - "console"
-scripts:
-    - package: amq-install
-      exec: install.sh
-    - package: amq-chown
-      exec: install.sh
-sources:
-    - artifact: jboss-a-mq-6.3.0.redhat-283.zip
+modules:
+      install:
+          - name: amq-install
+          - name: amq-chown
+artifacts:
+    - path: jboss-a-mq-6.3.0.redhat-283.zip
+      description: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=46841&product=jboss.amq&version=6.3.0&downloadType=distributions"
       md5: 5e51af6c124398a2aaccfbe4d58aad04
-      hint: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=46841&product=jboss.amq&version=6.3.0&downloadType=distributions"
-dogen:
-    version: 2.4.3
-    plugins:
-        dist_git:
-            repo: jboss-amq-6-docker
+run:
+      user: 185
+      cmd:
+          - "/opt/amq/bin/activemq"
+          - "console"
+osbs:
+      repository:
+            name: jboss-amq-6-docker
             branch: jb-amq63
