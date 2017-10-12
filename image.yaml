@@ -4,6 +4,13 @@ name: "jboss-amq-6/amq62"
 description: "Red Hat JBoss AMQ 6.2 container image"
 version: "6.2.1"
 from: "jboss/openjdk18-rhel7:1.0"
+labels:
+    - name: "org.jboss.product"
+      value: "amq"
+    - name: "org.jboss.product.version"
+      value: "6.2.1.redhat_211"
+    - name: "org.jboss.product.amq.version"
+      value: "6.2.1.redhat_211"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "AMQ"
