@@ -3,7 +3,7 @@ schema_version: 1
 name: "jboss-amq-6/amq62"
 description: "Red Hat JBoss AMQ 6.2 container image"
 version: "6.2.1"
-from: "jboss/openjdk18-rhel7:1.0"
+from: "jboss/openjdk18-rhel7:1.1"
 labels:
     - name: "org.jboss.product"
       value: "amq"
