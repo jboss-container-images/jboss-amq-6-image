@@ -3,8 +3,8 @@
 set -e
 
 SOURCES_DIR=/tmp/artifacts/
-DISTRIBUTION_VERSION="jboss-a-mq-6.2.1.redhat-211"
-ACTIVEMQ_VERSION="apache-activemq-5.11.0.redhat-621211"
+DISTRIBUTION_VERSION="jboss-a-mq-6.2.1.redhat-216"
+ACTIVEMQ_VERSION="apache-activemq-5.11.0.redhat-621216"
 
 unzip -q "$SOURCES_DIR/${DISTRIBUTION_VERSION}.zip"
 
