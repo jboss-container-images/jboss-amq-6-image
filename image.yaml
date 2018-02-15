@@ -8,16 +8,16 @@ labels:
     - name: "org.jboss.product"
       value: "amq"
     - name: "org.jboss.product.version"
-      value: "6.3.0.redhat-310"
+      value: "6.3.0.redhat-329"
     - name: "org.jboss.product.amq.version"
-      value: "6.3.0.redhat-310"
+      value: "6.3.0.redhat-329"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "AMQ"
     - name: "JBOSS_AMQ_VERSION"
-      value: "6.3.0.redhat-310"
+      value: "6.3.0.redhat-329"
     - name: "PRODUCT_VERSION"
-      value: "6.3.0.redhat-310"
+      value: "6.3.0.redhat-329"
     - name: "AMQ_HOME"
       value: "/opt/amq"
 modules:
@@ -27,9 +27,9 @@ modules:
           - name: amq-install
           - name: amq-chown
 artifacts:
-    - path: jboss-a-mq-6.3.0.redhat-310.zip
-      description: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=54231&product=jboss.amq.broker&version=6.3.0&downloadType=securityPatches"
-      md5: 7a05a30a59e947ec443622c77596de66
+    - path: jboss-a-mq-6.3.0.redhat-329.zip
+      description: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=56371&product=jboss.amq.broker&version=6.3.0&downloadType=securityPatches"
+      md5: 46518c75c5e85da9ac8f036febeffc2c
 run:
       user: 185
       cmd:
