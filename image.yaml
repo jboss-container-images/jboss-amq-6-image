@@ -38,4 +38,4 @@ run:
 osbs:
       repository:
             name: jboss-amq-6-docker
-            branch: jb-amq62
+            branch: jb-amq-6.2-rhel-7
