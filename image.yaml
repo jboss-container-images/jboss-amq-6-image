@@ -5,6 +5,8 @@ description: "Red Hat JBoss AMQ 6.2 container image"
 version: "6.2.1"
 from: "jboss/openjdk18-rhel7:1.1"
 labels:
+    - name: "com.redhat.component"
+      value: "jboss-amq-6-amq62-container"
     - name: "org.jboss.product"
       value: "amq"
     - name: "org.jboss.product.version"
@@ -37,5 +39,5 @@ run:
           - "console"
 osbs:
       repository:
-            name: jboss-amq-6-docker
+            name: containers/jboss-amq-6
             branch: jb-amq-6.2-rhel-7
