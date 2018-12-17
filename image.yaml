@@ -3,39 +3,56 @@ schema_version: 1
 name: "jboss-amq-6/amq63"
 description: "Red Hat JBoss AMQ 6.3 container image"
 version: "6.3.0"
-from: "jboss/openjdk18-rhel7:1.1-29"
+from: "rhel7:7-released"
 labels:
+    - name: "com.redhat.component"
+      value: "jboss-amq-6-amq63-container"
     - name: "org.jboss.product"
       value: "amq"
     - name: "org.jboss.product.version"
-      value: "6.3.0.redhat-356"
+      value: "6.3.0.redhat-371"
     - name: "org.jboss.product.amq.version"
-      value: "6.3.0.redhat-356"
+      value: "6.3.0.redhat-371"
 envs:
     - name: "JBOSS_PRODUCT"
       value: "AMQ"
     - name: "JBOSS_AMQ_VERSION"
-      value: "6.3.0.redhat-356"
+      value: "6.3.0.redhat-371"
     - name: "PRODUCT_VERSION"
-      value: "6.3.0.redhat-356"
+      value: "6.3.0.redhat-371"
     - name: "AMQ_HOME"
       value: "/opt/amq"
 modules:
       repositories:
           - path: modules
+          - name: cct_module
+            git:
+              url: https://github.com/jboss-openshift/cct_module.git
+              ref: master
       install:
+          - name: jboss.container.openjdk.jdk
+            version: "8"
           - name: amq-install
           - name: amq-chown
 artifacts:
-    - path: jboss-a-mq-6.3.0.redhat-356.zip
+    - name: jboss-a-mq-6.3.0.redhat-371.zip
       description: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?product=jboss.amq.broker&downloadType=securityPatches&version=6.3.0"
-      md5: 13e415397cc343e6707e270f957467ce
+      md5: 9c6fc3a536d5fa1c118a1ac354b754a5
 run:
       user: 185
       cmd:
           - "/opt/amq/bin/activemq"
           - "console"
 osbs:
+      configuration:
+            container:
+                  compose:
+                      pulp_repos: true
       repository:
             name: containers/jboss-amq-6
             branch: jb-amq-6.3-rhel-7
+packages:
+      content_sets:
+            x86_64:
+                - rhel-7-server-rpms
+
