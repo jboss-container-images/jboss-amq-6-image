@@ -1,5 +1,6 @@
 schema_version: 1
 
 name: amq-chown
+version: 1.0
 execute:
     - script: install.sh
