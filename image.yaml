@@ -22,23 +22,20 @@ envs:
       value: "6.3.0.redhat-416"
     - name: "AMQ_HOME"
       value: "/opt/amq"
+
 modules:
       repositories:
-          - path: modules
+          - name: modules
+            path: modules
           - name: cct_module
             git:
               url: https://github.com/jboss-openshift/cct_module.git
-              ref: master
+              ref: sprint-35
       install:
           - name: jboss.container.openjdk.jdk
             version: "8"
           - name: amq-install
           - name: amq-chown
-artifacts:
-    - name: jboss-a-mq-6.3.0.redhat-416
-      target: jboss-a-mq-6.3.0.redhat-416.zip
-      description: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?product=jboss.amq.broker&downloadType=securityPatches&version=6.3.0"
-      md5: 913781b37529cade4e8b850fee20101b
 run:
       user: 185
       cmd:
