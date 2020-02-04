@@ -3,7 +3,7 @@ schema_version: 1
 name: "jboss-amq-6/amq63"
 description: "Red Hat JBoss AMQ 6.3 container image"
 version: "6.3.0"
-from: "rhel7:7.7-384.1575996163"
+from: "rhel7:7.7-384.1580117710"
 labels:
     - name: "com.redhat.component"
       value: "jboss-amq-6-amq63-container"
