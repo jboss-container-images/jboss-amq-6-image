@@ -3,8 +3,8 @@
 set -e
 
 SOURCES_DIR=/tmp/artifacts/
-DISTRIBUTION_VERSION="jboss-a-mq-6.3.0.redhat-434"
-ACTIVEMQ_VERSION="apache-activemq-5.11.0.redhat-630434"
+DISTRIBUTION_VERSION="jboss-a-mq-6.3.0.redhat-446"
+ACTIVEMQ_VERSION="apache-activemq-5.11.0.redhat-630446"
 
 AMQ_HOME=/opt/amq
 
