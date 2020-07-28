@@ -9,6 +9,8 @@ labels:
       value: "jboss-amq-6-amq63-container"
     - name: "org.jboss.product"
       value: "amq"
+    - name: "maintainer"
+      value: "hgao@redhat.com"
     - name: "org.jboss.product.version"
       value: "6.3.0.redhat-416"
     - name: "org.jboss.product.amq.version"
