@@ -2,6 +2,8 @@
 
 NOTE: Extends link:https://github.com/jboss-container-images/jboss-openjdk-image[JBoss OpenJDK image]
 
+Now it uses cekit 3.x to build image
+
 # License
 
 See link:LICENSE[LICENSE] file.
