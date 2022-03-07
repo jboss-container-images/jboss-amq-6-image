@@ -6,8 +6,7 @@ version: 1.0
 artifacts:
   - name: jboss-a-mq-6.3.0.redhat-516.zip
     target: jboss-a-mq-6.3.0.redhat-516.zip
-    # md5: ba01c9c6ca2db11764b37477d32527b9
-    sha256: 90b32f203d72203c6d833d8044586ac03a8d93683fe183a1373105d5530fd050
+    md5: ba01c9c6ca2db11764b37477d32527b9
     description: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?product=jboss.amq.broker&downloadType=securityPatches&version=6.3.0"
 
 execute:
