@@ -4,7 +4,7 @@ set -e
 
 SOURCES_DIR=/tmp/artifacts/
 DISTRIBUTION_VERSION="jboss-a-mq-6.3.0.redhat-516"
-PATCH_VARION="hf1"
+PATCH_VERION="hf1"
 ACTIVEMQ_VERSION="apache-activemq-5.11.0.redhat-630517"
 
 AMQ_HOME=/opt/amq
