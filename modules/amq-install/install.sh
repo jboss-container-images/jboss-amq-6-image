@@ -3,12 +3,13 @@
 set -e
 
 SOURCES_DIR=/tmp/artifacts/
-DISTRIBUTION_VERSION="jboss-a-mq-6.3.0.redhat-516-hf1"
+DISTRIBUTION_VERSION="jboss-a-mq-6.3.0.redhat-516"
+PATCH_VARION="hf1"
 ACTIVEMQ_VERSION="apache-activemq-5.11.0.redhat-630517"
 
 AMQ_HOME=/opt/amq
 
-unzip -q "$SOURCES_DIR/${DISTRIBUTION_VERSION}.zip"
+unzip -q "$SOURCES_DIR/${DISTRIBUTION_VERSION}-${PATCH_VERSION}.zip"
 
 ls $SOURCES_DIR
 
@@ -17,4 +18,4 @@ pushd $DISTRIBUTION_VERSION/extras > /dev/null
   mv $ACTIVEMQ_VERSION $AMQ_HOME
 popd > /dev/null
 
-rm -rf $DISTRIBUTION_VERSION
+rm -rf ${DISTRIBUTION_VERSION}
